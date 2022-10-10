@@ -1,17 +1,17 @@
-const Hello = (props) => {
-  return (
-    <div>
-      <p>Hello {props.name}</p>
-    </div>  
-  )
-}
+import { useState } from 'react'
 
 const App = () => {
+  const [value, setValue] = useState(10)
+
+  const hello = () => {
+    const handler = () => console.log('hello world')
+    return handler
+  }
+  
   return (
     <div>
-      <h1>Greetings</h1>
-      <Hello name="John"/> 
-      <Hello name="Justine"/> 
+      {value}
+      <button onClick={hello()}>button</button>
     </div>
   )
 }
