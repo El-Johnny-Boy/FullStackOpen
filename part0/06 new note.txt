@@ -1,0 +1,8 @@
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: Status code 201 : new ressource created
+Server-->Browser: {"content":"spa submission","date":"2022-10-10T15:04:09.544Z"}
+
+note over Browser:
+browser executes the event handler
+that renders notes to display
+end note

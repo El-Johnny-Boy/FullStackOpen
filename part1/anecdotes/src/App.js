@@ -37,6 +37,7 @@ const App = () => {
   console.log(Math.max(...votes))
   console.log(votes.indexOf(Math.max(...votes)))
 
+  
   return (
     <div>
       <h1>Anecdote of the day</h1>
